@@ -54,7 +54,20 @@ for (let product of products) {
 let promoPrice = product.price * (1-discount);
 product.promoPrice = promoPrice.toFixed(2);
 };
-
 console.log(products);
 
-let customerType = "student"
+let customerType = ["regular", "student", "senior"]
+
+for (let product of products){
+let extraDiscount = 0
+
+if (customerType = "student") {
+    extraDiscount = 0.05
+}
+else (customerType = "senior")
+    extraDiscount = 0.07
+
+let orderTotal = product.price * (1-extraDiscount);
+product.orderTotal = orderTotal.toFixed(2);
+};
+
